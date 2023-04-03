@@ -1,0 +1,17 @@
+{
+    "env": {
+      "API_KEY": "@api_key"
+    },
+    "build": {
+      "env": {
+        "API_KEY": "@api_key"
+      }
+    },
+    "routes": [
+      {
+        "src": "/api/(.*)",
+        "dest": "/api/index.mjs"
+      }
+    ]
+  }
+  
