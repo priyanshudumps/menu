@@ -12,7 +12,7 @@ let userAnswers = [];
 
 (async () => {
     const interviewType = localStorage.getItem('jobTitle');
-    const response = await axios.post('https://inittttt.vercel.app/api/gpt', { inputText: `Generate 10 ${interviewType} interview questions.` });
+    const response = await axios.post('https://menu-sz3a.onrender.com/api/gpt', { inputText: `Generate 10 ${interviewType} interview questions.` });
 
     if (response.data.data) {
         questions = response.data.data.split('\n').filter(q => q.trim() !== '');
